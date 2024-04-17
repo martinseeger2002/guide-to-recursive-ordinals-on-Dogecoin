@@ -258,3 +258,82 @@ Nerd Stone Test child
 ```
 
 This guide helps you ensure that your digital assets function correctly before committing them to the blockchain, using a practical and efficient testing method.
+
+# Zombie Character Assembler
+
+This guide describes how to create a web-based application using p5.js to assemble a zombie character with various components such as background, body, crown, and sunglasses.
+
+## Overview
+
+The application loads multiple images (layers) to form a complete zombie character. Each image is drawn over the previous one to achieve a composite effect.
+
+## Prerequisites
+
+- Basic knowledge of HTML and JavaScript.
+- p5.js library.
+
+## Setup
+
+Create an HTML file and include the p5.js library. 
+/content/2fd9bda05feb18801319b80f8991be03f581a478bf1bcce130183e12c3f7d43ai0
+is p5.js
+
+### Example HTML Setup
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie Character Assembler</title>
+    <script src="/content/2fd9bda05feb18801319b80f8991be03f581a478bf1bcce130183e12c3f7d43ai0"></script>
+</head>
+<body>
+    <script src="/content/<sketch.js inscription ID>"></script>
+</body>
+</html>
+```
+
+## Creating the Sketch
+
+Create a JavaScript file named `sketch.js`. This file will contain all the p5.js code needed to load and display the zombie images.
+
+### Code Structure
+
+1. **Preload Function**: Preload all the necessary images to avoid delays during rendering.
+2. **Setup Function**: Set up the canvas and any other necessary settings.
+3. **Draw Function**: Draw the images on the canvas in the correct order to assemble the zombie.
+
+### Example Sketch Code
+
+```javascript
+let zombieBackground;
+let zombieBruno;
+let zombieCrown;
+let zombieSunglasses;
+
+function preload() {
+    zombieBackground = loadImage('/content/dc6387d9bd88042b4c22f2e72cb0dbfa996981611e9cc265f072071eb1ebc6c1i0');
+    zombieBruno = loadImage('/content/5ab20408c37ebe4f7173b3e1b89701b57a164c052558a87f0ce5be677de6787ai0');
+    zombieCrown = loadImage('/content/e84f726b44757eeb98b6089ec6dce13798c90c7b042d29e817c1547cbec7b95ci0');
+    zombieSunglasses = loadImage('/content/00a84caad6b41cf51b8f035e1d08eddc71c5aae1bdd5cdb5ce88e4a55e7702a3i0');
+}
+
+function setup() {
+    createCanvas(800, 600);
+    noLoop();
+}
+
+function draw() {
+    background(255);
+    image(zombieBackground, 0, 0);
+    image(zombieBruno, 0, 0);
+    image(zombieCrown, 0, 0);
+    image(zombieSunglasses, 0, 0);
+}
+```
+
+## Conclusion
+
+This simple application demonstrates the power of p5.js for creating interactive media applications. Customize the application by adding more layers or interactivity to the character assembly process.
