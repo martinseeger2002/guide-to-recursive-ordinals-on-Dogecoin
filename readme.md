@@ -26,29 +26,6 @@ const materials = [
 ];
 ```
 
-### Additional Example: 3D Model Inscription for DPAY Stones
-
-HTML content designed to display a 3D model using three.js and the GLTFLoader:
-
-```
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <script type="module" src="/content/c3b478dc1b3a0fa789c65e53aebaa47bd6917a0d17384891bd694c42b1036133i0"></script>
-    <style>
-      model-viewer {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-      }
-    </style>
-  </head>
-  <body>
-      <model-viewer src="/content/1101c9b8c3219c40ba5b63a04e4246aa0ef31457aeda689f11fc0478ece4c049i0" camera-controls="" touch-action="pan-y" auto-rotate="" ar-status="not-presenting" style="width: 100%; height: 100%;"></model-viewer>
-  </body>
-</html>
-```
-
 ## Step 2: Inscribe the Parent Inscription
 
 Convert the content into a format suitable for inscription on the Dogecoin blockchain, ensuring that the script and model paths reference content stored on the blockchain.
